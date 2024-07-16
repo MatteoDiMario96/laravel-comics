@@ -27,13 +27,13 @@ header{
                     li{
                         padding: .5rem;
                         a{
-                        color: $secondary-color;
+                        color: #626160;
                         font-size: .6rem;
                         font-weight: 700;
                         &.active{
-                        color: $primary_color;
+                        color: #0282f9;
                         padding-bottom: 2.3rem;
-                        border-bottom: 5px solid $primary_color;
+                        border-bottom: 5px solid #0282f9;
                         }
                     }
                 }
@@ -193,7 +193,7 @@ section#ul-links{
         background-position: left;
     }
 }
-nav{
+nav#footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
