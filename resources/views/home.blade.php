@@ -14,18 +14,20 @@
         <header>
             <nav>
                 <div id="div-logo">
-                    <a :href="MainLogo.href">
-                        <img :src="MainLogo.src" :alt="MainLogo.alt" id="img-logo">
+                    <a href="{{$MainLogo['href']}}">
+                        <img src="{{$MainLogo['src']}}" alt="{{$MainLogo['alt']}}" id="img-logo">
                     </a>
                 </div>
 
                 <div id="ul-header">
                     <ul>
-                        <li v-for="link in UlHeaderLinks" :key="link.id">
-                            <a :href="link.href" :class="(link.active === true) ? 'active' : ''">
-                                ***
-                            </a>
-                        </li>
+                        @foreach ($UlHeaderLinks as $link )
+                            <li>
+                                <a href="/{{$link['title']}}" class="{{$link['active'] ? 'active' : ''}}">
+                                    {{ $link['title'] }}
+                                </a>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
             </nav>
@@ -42,12 +44,14 @@
                 </section>
                 <section id="black">
                 <div id="cards">
+                    @foreach ($LiCardsJson as $card)
                     <div id="card">
-                        <img :src="singleCard.thumb" :alt="singleCard.series">
+                        <img src="{{$card['thumb']}}" alt="{{$card['series']}}">
                         <h3>
-                            ***
+                            {{$card['series']}}
                         </h3>
                     </div>
+                    @endforeach
                 </div>
                 <div id="button">
                     <button>
