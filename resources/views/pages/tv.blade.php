@@ -12,20 +12,16 @@
         </section>
         <section id="black">
         <div id="cards">
-            @foreach ($LiCardsJson as $article )
-            <div id="card">
-                <article>
-                    <img src="{{$article['thumb']}}" alt="{{$article['series']}}">
-                    <h2>
-                        {{$article['series']}}
-                    </h2>
-                </article>
-            </div>
-            @endforeach
+            <h2>
+                IN arrivo una serie Tv
+            </h2>
+            <h1>
+                Teen Titans GO!
+            </h1>
         </div>
         <div id="button">
             <button>
-                <a href="/SHOP">Load More</a>
+                <a href="/SHOP">Shop</a>
             </button>
         </div>
     </section>
@@ -34,7 +30,7 @@
         <section id="blu">
         <section class="article">
             @foreach ($ArticleImgLinks as $article )
-            <article class="book-article">
+            <article>
                 <img src="{{Vite::asset($article['src'])}}" alt="{{$article['alt']}}">
                 <h2>
                     {{$article['title']}}
@@ -46,6 +42,3 @@
     </div>
 </main>
 @endsection
-
-
-

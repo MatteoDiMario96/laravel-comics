@@ -18,7 +18,7 @@
             </div>
             <div id="button">
                 <button>
-                    <a href="/SHOP">Load More</a>
+                    <a href="/SHOP">Shop</a>
                 </button>
             </div>
         </section>
@@ -28,7 +28,7 @@
             <section class="article">
                 @foreach ($ArticleImgLinks as $article )
                 <article>
-                    <img src="{{$article['src']}}" alt="{{$article['alt']}}">
+                    <img src="{{Vite::asset($article['src'])}}" alt="{{$article['alt']}}">
                     <h2>
                         {{$article['title']}}
                     </h2>
