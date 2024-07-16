@@ -43,7 +43,7 @@ header{
 }
 
 section#jumbotron{
-    background-image: url('/resource/img/jumbotron.jpg');
+    background-image: url('/resources/img/jumbotron.jpg');
     height: 285px;
     background-size: cover;
 }
@@ -152,7 +152,7 @@ section.article{
 }
 
 div#div-bg-img-footer{
-    background-image: url('/resource/img/footer-bg.jpg');
+    background-image: url('/resources/img/footer-bg.jpg');
 }
 section#ul-links{
     padding: 0 0 0 1rem;
@@ -231,5 +231,9 @@ nav#footer{
     }
 }
 
+
+ul{
+    list-style-type: none;
+}
 
 

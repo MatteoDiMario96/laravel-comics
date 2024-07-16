@@ -63,12 +63,14 @@
             <div id="div-blu">
                 <section id="blu">
                 <section class="article">
-                    <article v-for="article in ArticleImgLinks" :key="article.id">
-                        <img :src="article.src" :alt="article.alt">
+                    @foreach ($ArticleImgLinks as $article )
+                    <article>
+                        <img src="{{$article['src']}}" alt="{{$article['alt']}}">
                         <h2>
-                            ***
+                            {{$article['title']}}
                         </h2>
                     </article>
+                    @endforeach
                 </section>
             </section>
             </div>
@@ -83,22 +85,26 @@
                         <h2>
                             Dc Comics
                         </h2>
-                        <li v-for="link in FooterUlLinksDCComics" :key="link.id">
-                            <a :href="link.href">
-                                ***
+                        @foreach ($FooterUlLinksDCComics as $link)
+                        <li>
+                            <a href="{{$link['href']}}">
+                                {{$link['title']}}
                             </a>
                         </li>
+                        @endforeach
                     </ul>
 
                     <ul id="shop">
                         <h2>
                             Shop
                         </h2>
-                        <li v-for="link in FooterUlLinksShop" :key="link.id">
-                            <a :href="link.href">
-                                ***
+                        @foreach ($FooterUlLinksShop as $link )
+                        <li>
+                            <a href="{{$link['href']}}">
+                                {{$link['title']}}
                             </a>
                         </li>
+                        @endforeach
                     </ul>
 
                     </div>
@@ -107,21 +113,25 @@
                         <h2>
                             Dc
                         </h2>
-                        <li v-for="link in FooterUlLinksDC" :key="link.id">
-                            <a :href="link.href">
-                                ***
+                        @foreach ($FooterUlLinksDC as $link )
+                        <li>
+                            <a href="{{$link['href']}}">
+                                {{$link['title']}}
                             </a>
                         </li>
+                        @endforeach
                     </ul>
                     <ul id="sites">
                         <h2>
                             Sites
                         </h2>
-                        <li v-for="link in FooterUlLinksSites" :key="link.id">
-                            <a :href="link.href">
-                                ***
+                        @foreach ($FooterUlLinksSites as $link)
+                        <li>
+                            <a href="{{$link['href']}}">
+                                {{$link['title']}}
                             </a>
                         </li>
+                        @endforeach
                     </ul>
                 </div>
                 <div id="img">
