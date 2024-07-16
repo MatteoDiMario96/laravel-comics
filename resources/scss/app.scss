@@ -1,1 +1,235 @@
-@import "~bootstrap/scss/bootstrap.scss";
+// @import "~bootstrap/scss/bootstrap.scss";
+
+header{
+    height: 70px;
+    padding: 1rem;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        max-width: 1050px;
+        margin: 0 auto;
+        #div-logo{
+            height: 100%;
+            a{
+                height: 100%;
+                img{
+                height: 100%;
+                }
+            }
+
+        }
+        #ul-header{
+            ul{
+                display: flex;
+                    li{
+                        padding: .5rem;
+                        a{
+                        color: $secondary-color;
+                        font-size: .6rem;
+                        font-weight: 700;
+                        &.active{
+                        color: $primary_color;
+                        padding-bottom: 2.3rem;
+                        border-bottom: 5px solid $primary_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#jumbotron{
+    background-image: url('/resource/img/jumbotron.jpg');
+    height: 285px;
+    background-size: cover;
+}
+div#div-black{
+    background-color: #1c1c1c;
+}
+section#black{
+    background-color: #1c1c1c;
+    padding: 1rem;
+    // @include flex-center();
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+div#cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+div#card{
+    width: calc((100% / 6) - 1rem);
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    img{
+    width: 100%;
+    /*Questa è quella giusta ma dovevo perforza far visualizzare bene per intero le card. Troppo belle.
+    height: 150px;*/
+    height: 248px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: .4rem;
+}
+h3{
+    text-align: start;
+    font-size: .7rem;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+}
+
+div#div-blu{
+    background-color: #0282f9;
+}
+section#blu{
+    height: 80px;
+    padding: 1rem;
+    display: flex;
+    background-color: #0282f9;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+div#button{
+    margin: 0 auto;
+}
+
+div.container{
+    max-width: 1050px;
+    margin: 0 auto;
+    div{
+    text-transform: uppercase;
+    background-color: #0282f9;
+    display: inline-block;
+    padding: .7rem .9rem .7rem .9rem;
+    color: white;
+    position: relative;
+    top: 270px;
+    font-weight: 900;
+}
+}
+
+button{
+    padding: .4rem 2.3rem .4rem 2.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .6rem;
+    border: 1px solid transparent;
+    background-color: #0282f9;
+    color: white;
+
+}
+
+section.article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-left: 1rem;
+    article{
+        display: flex;
+        align-items: center;
+        font-size: .5rem;
+        text-transform: uppercase;
+        color: white;
+    }
+    img{
+        height: 45px;
+        padding: 1.5rem;
+    }
+}
+
+div#div-bg-img-footer{
+    background-image: url('/resource/img/footer-bg.jpg');
+}
+section#ul-links{
+    padding: 0 0 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1050px;
+    margin: 0 auto;
+    div#ul{
+        display: flex;
+        flex-direction: row;
+        padding-top: 1.2rem;
+        ul{
+
+            h2{
+            padding: .3rem;
+            margin-bottom: .3rem;
+            text-transform: uppercase;
+            font-size: 1.10rem;
+            font-weight: 700;
+            color: white;
+            }
+            li{
+                padding: .3rem;
+                font-size: .8rem;
+            }
+        }
+        ul#dc-comics{
+            margin-bottom: 1.2rem;
+        }
+        ul#shop{
+            margin-bottom: 2.2rem;
+        }
+    }
+    div#img{
+        width: 55%;
+        background-image: url('/resource/img/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #303030;
+    height: 70px;
+    padding: 1rem;
+    div#div-container-footer{
+        min-width: 1050px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    button{
+        background-color: #303030;
+        border: 2px solid #0777df;
+        color: white;
+        padding: .6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        align-self: center;
+    }
+    section#sign-up-social{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        div{
+            h2{
+                color:#0777df;
+            }
+            padding: 1rem;
+            a{
+                padding: .3rem;
+            }
+        }
+    }
+}
+
+
+
